@@ -1,0 +1,5 @@
+Let's implement an agent gateway by taking the reference from "https://docs.litellm.ai/docs/a2a". The idea is to create an agent gateway where people are able to add/edit/delete their agents and use in the application.
+First let's install the libraries required for litellm gateway and a simple getway UI should be up and running with test agents as mentioned in the litellm documentation or no agents.
+Once done, we will integrate the 3 agents(Finops, Tickets and Oxygen) and orchestrator agent(Jarvis) from the agentic_jarvis library (https://github.com/vishalkumar9dec/agentic_jarvis), As we have already done that, so it will be just replicating the behavior here in this project. Remember we have to follow take care of the libraries, versions and compatibility issues.
+
+Feel free to ask any clarifying question and don't create unnecessary files.

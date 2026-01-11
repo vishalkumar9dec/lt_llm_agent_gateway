@@ -1,0 +1,13 @@
+# LiteLLM Agent Gateway Dependencies
+
+# Core LiteLLM with proxy/gateway capabilities
+litellm[proxy]
+
+# Database ORM - required for LiteLLM proxy
+prisma
+
+# ASGI server for running the gateway
+uvicorn
+
+# Environment variable management
+python-dotenv
