@@ -1,26 +1,28 @@
-model_list:
-  # Example test agents - these can be replaced with actual A2A agents later
-  # Uncomment and configure when you have real agents to add
-  # - model_name: test_agent
-  #   litellm_params:
-  #     model: gpt-3.5-turbo
-  #     api_base: http://localhost:8080
-  #     custom_llm_provider: a2a
+# LiteLLM Agent Gateway Configuration
+# ====================================
+#
+# A2A Agents are registered via the Admin UI (not in this file)
+# See docs/AGENT_ARCHITECTURE.md for details
+
+model_list: []
 
 litellm_settings:
   # Enable detailed logging for debugging
   set_verbose: true
-  # Enable A2A protocol support
+
+  # Enable A2A protocol support for agent communication
   enable_a2a: true
 
 general_settings:
-  # Enable the Admin UI
+  # Enable the Admin UI at http://localhost:4000/ui
   ui: true
 
   # Master key from environment variable
+  # Used for authentication: Authorization: Bearer ${LITELLM_MASTER_KEY}
   master_key: os.environ/LITELLM_MASTER_KEY
 
   # Database configuration - PostgreSQL
+  # Gateway stores models, agents, and request logs here
   database_url: os.environ/DATABASE_URL
   store_model_in_db: true
 
