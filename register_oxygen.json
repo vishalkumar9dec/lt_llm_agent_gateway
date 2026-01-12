@@ -1,0 +1,19 @@
+{
+  "agent_name": "oxygen_remote",
+  "agent_card_params": {
+    "protocolVersion": "1.0",
+    "name": "Oxygen Agent (Remote)",
+    "description": "Learning platform agent running on host",
+    "url": "http://host.docker.internal:8082",
+    "version": "1.0.0",
+    "defaultInputModes": ["text"],
+    "defaultOutputModes": ["text"],
+    "capabilities": {
+      "streaming": false
+    },
+    "skills": []
+  },
+  "litellm_params": {
+    "make_public": false
+  }
+}
